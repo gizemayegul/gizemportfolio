@@ -33,7 +33,7 @@ code {
   margin: 4rem;
 }
 
-@media (max-width: 400px){
+@media (max-width: 768px){
   #slides{
     max-width: 100%
   }
