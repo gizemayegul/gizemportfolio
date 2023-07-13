@@ -1,4 +1,4 @@
-body {
+*{
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -7,7 +7,58 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+@media (max-width: 768px) {
+  img{
+    max-width: 100%;
+ 
+  }
+
+
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+ #wrapper,#nav-wrapper,#about-wrapper,#contact-wrapper,#resume-wrapper{
+  margin: 5rem;
+ }
+
+ h1{
+  margin: 5rem;
+}
+
+
+
+#resume-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#slides{
+  max-width: 50%;
+  padding: 1rem;
+}
+
+@media only screen and (max-width: 480px) {
+ #slides{
+  max-width: 100%;
+ }
+
+
+
+#wrapper,
+#nav-wrapper,
+#about-wrapper,
+#contact-wrapper,
+#resume-wrapper,
+#download-wrapper {
+  margin: 1rem;
+}
+
+
 }
