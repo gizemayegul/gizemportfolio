@@ -1,15 +1,16 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import myPhoto from './assests/myphoto-min.png';
 
 
 const Projects = () => {
-    return (
+    return ( 
         <section id="project" >
             <h1>Projects</h1>
             <div id="wrapper" className="row row-cols-1 row-cols-md-3 g-4">
             <div className="col">
                     <div className="card h-100">
-                        <img src='https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcSM_RqHrSewyZbyik2DvCcItwSGEj6WJ1P3LU_Vl-5debXy9H6We_Gv6mkXJma9AFXBqY-ClodxXJNm93M'className="card-img-top" alt="..."/>
+                        <img src={myPhoto} className="card-img-top" alt="..."/>
                             <div className="card-body">
                                 <h5 className="card-title">My Personal WebPage/Bootstrap</h5>
                                 <p className="card-text">Welcome to my personal webpage! This site serves as a platform for me to showcase my skills, experiences, and projects. Using the power of Bootstrap and React, I've created a visually appealing and user-friendly interface to present my work and provide insights into my professional journey.</p>

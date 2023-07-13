@@ -1,15 +1,14 @@
 import React from 'react';
-
-
+import myPhoto from './assests/myphoto-min.png';
 
 const About = () => {
+
     return (
         <section id="about">
             <div id="about-wrapper" >
                 <div className="row" style={{ justifyContent: 'center' }} >
-                    <img 
-                    src='https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcSM_RqHrSewyZbyik2DvCcItwSGEj6WJ1P3LU_Vl-5debXy9H6We_Gv6mkXJma9AFXBqY-ClodxXJNm93M'
-                     className="img-thumbnail" alt="..." style={{ borderRadius: '50%', maxWidth: '25%', height: 'auto' }}></img>
+                    <img src={myPhoto}
+                     className="img-thumbnail" alt="..." style={{ borderRadius: '50%', maxWidth: '25%', height: 'auto' }}/>
                     <h2 className='text-center' style={{margin :'1rem'}}>Hello Welcome to my Page!</h2>
                 </div>
 

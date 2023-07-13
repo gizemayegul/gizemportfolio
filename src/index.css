@@ -11,3 +11,38 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+
+#resume-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#slides{
+  max-width: 50%;
+  padding: 1rem;
+}
+
+
+
+.App{
+  margin: 4rem;
+}
+
+@media (max-width: 400px){
+  #slides{
+    max-width: 100%
+  }
+
+  .App{
+    margin: 1rem;
+  }
+
+  img{
+    max-width: 100%;
+  }
+}

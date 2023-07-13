@@ -1,6 +1,10 @@
 import { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Carousel from 'react-bootstrap/Carousel';
+import psmPNG from './assests/Psm-min.png';
+import courseraPNG from './assests/CorSera-min.png';
+import dataPNG from './assests/Data-min.png';
+
 
 
 
@@ -10,29 +14,26 @@ function Slides() {
     const handleSelect = (selectedIndex) => {
         setIndex(selectedIndex);
     };
-
-
-
     return (
         <Carousel data-bs-theme="dark" activeIndex={index} onSelect={handleSelect} >
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src='https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcSM_RqHrSewyZbyik2DvCcItwSGEj6WJ1P3LU_Vl-5debXy9H6We_Gv6mkXJma9AFXBqY-ClodxXJNm93M'
+                    src={courseraPNG}
                     alt="First slide"
                 />
             </Carousel.Item>
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src='https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcSM_RqHrSewyZbyik2DvCcItwSGEj6WJ1P3LU_Vl-5debXy9H6We_Gv6mkXJma9AFXBqY-ClodxXJNm93M'
+                    src={dataPNG}
                     alt="Second slide"
                 />
             </Carousel.Item>
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src='https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcSM_RqHrSewyZbyik2DvCcItwSGEj6WJ1P3LU_Vl-5debXy9H6We_Gv6mkXJma9AFXBqY-ClodxXJNm93M'
+                    src={psmPNG}
                     alt="Third slide"
                 />
 

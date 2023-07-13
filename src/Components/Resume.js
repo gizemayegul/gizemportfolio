@@ -1,7 +1,6 @@
 import React from 'react';
 import Slides from './Slides';
-const resumePDF = process.env.PUBLIC_URL + './gizemayazyegul_FE.pdf';
-
+import resumePDF from './assests/gizemayazyegul_FE.pdf'
 
 const Resume = () => {
     return (

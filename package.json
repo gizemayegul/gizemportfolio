@@ -1,7 +1,7 @@
 {
   "name": "gizemportfolio",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "https://gizemayaz.com",
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^6.4.0",

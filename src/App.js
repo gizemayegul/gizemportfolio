@@ -8,9 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <div>
-      <header>
-      </header>
+    <div className='App'>
       <Nav/>
       <About/>
       <Projects/>
