@@ -12,10 +12,10 @@ const Resume = () => {
                     <Slides />
                 </div>
                 <div>
-                    <h1>You can download my resume from here</h1>
+                    <h3>You can download my resume from here</h3>
                 </div>
                 <div>
-                    <a href={resumePDF} download className="btn btn-primary">
+                    <a id="download" href={resumePDF} download className="btn btn-primary">
                         Download PDF
                     </a>
                 </div>

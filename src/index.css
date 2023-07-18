@@ -46,3 +46,16 @@ code {
     max-width: 100%;
   }
 }
+
+
+.alert-fixed {
+  position: fixed;
+  z-index: 9999;
+}
+
+/* Style for the top alert */
+.alert-top {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
