@@ -20,7 +20,6 @@ function App() {
       <Projects/>
       <Resume/>
       <ContactMe />
-      
     </div>
   );
 }
