@@ -1,6 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import myPhoto from './assests/myphoto-min.png';
+import portfolio from './assests/portfolio.png';
 
 
 const Projects = () => {
@@ -42,7 +43,7 @@ const Projects = () => {
                 </div>
                 <div className="col">
                     <div className="card h-100">
-                        <img src="https://gizemayegul.github.io/PersonalPortfolio/static/media/photo2.7d510936625768642967.jpg" className="card-img-top" alt="..."/>
+                        <img src={portfolio} className="card-img-top" alt="..."/>
                             <div className="card-body">
                                 <h5 className="card-title">One Page Portfolio</h5>
                                 <p className="card-text">The Personal Portfolio is a one-page website developed as part of the Meta Frontend Certification on Coursera. The primary objective of this project was to create a form and learn how to perform verification using external libraries. Designed using HTML, CSS, and JavaScript, the portfolio page serves as a showcase of the developer's skills, expertise, and achievements. Through the implementation of a form with verification capabilities, this project highlights the practical application of front-end technologies in creating interactive and user-friendly web experiences.</p>
