@@ -46,7 +46,7 @@ const Projects = () => {
                             <div className="card-body">
                                 <h5 className="card-title">One Page Portfolio</h5>
                                 <p className="card-text">The Personal Portfolio is a one-page website developed as part of the Meta Frontend Certification on Coursera. The primary objective of this project was to create a form and learn how to perform verification using external libraries. Designed using HTML, CSS, and JavaScript, the portfolio page serves as a showcase of the developer's skills, expertise, and achievements. Through the implementation of a form with verification capabilities, this project highlights the practical application of front-end technologies in creating interactive and user-friendly web experiences.</p>
-                                <a href="https://gizemayegul.github.io/PersonalPortfolio/">Check it</a>
+                                <a href="https://gizemayegul.github.io/PersonalPortfolioProject/">Check it</a>
                             </div>
                     </div>
                 </div>
