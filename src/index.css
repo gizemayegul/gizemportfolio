@@ -45,6 +45,7 @@ code {
   img{
     max-width: 100%;
   }
+
 }
 
 
@@ -58,4 +59,30 @@ code {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+}
+
+
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(181, 186, 242);
+  margin-top:2rem;
+  flex-wrap:wrap ;
+
+}
+
+.footer h3{
+  padding: 1rem;
+  color: white;
+}
+
+
+@media (max-width: 768px) {
+
+  .footer h3{
+    padding: 0.2rem;
+    font-size:x-small
+  }
+  
 }

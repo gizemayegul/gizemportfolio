@@ -54,7 +54,7 @@ function Navigation() {
                             <Nav.Link href="#resume" onClick={(e) => handleNavClick(e, '#resume')}>Resume</Nav.Link>
                             <Nav.Link href="#contact" onClick={(e) => handleNavClick(e, '#contact')}>Contact</Nav.Link>
                         </Nav>
-                        <Nav>
+                        <Nav >
                             {socialList}
                         </Nav>
                     </Navbar.Collapse>
