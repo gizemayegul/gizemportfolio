@@ -2,6 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import myPhoto from './assests/myphoto-min.png';
 import portfolio from './assests/portfolio.png';
+import littlelemon from './assests/littlelemon.png'
 
 
 const Projects = () => {
@@ -22,7 +23,7 @@ const Projects = () => {
               
                 <div className="col">
                     <div className="card h-100">
-                        <img src="https://gizemayegul.github.io/LittleLemonRestaurant/lemon%20dessert.jpg" className="card-img-top"  alt="..."/>
+                        <img src={littlelemon} className="card-img-top"  alt="..."/>
                             <div className="card-body">
                                 <h5 className="card-title">Little Lemon Restaurant</h5>
                                 <p className="card-text">Little Lemon Restaurant is a captivating webpage designed to provide users with an immersive and visually pleasing dining experience. Developed using HTML, CSS, React, and the Chakra library, this project showcases the seamless integration of front-end technologies to create a user-friendly and interactive reservation system. </p>
