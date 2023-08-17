@@ -19,7 +19,7 @@ const Projects = () => {
                             <p className="card-text">I'm happy to share my new project – an Expense Tracker made using TypeScript and React. This project allowed me to learn TypeScript and improve my React skills.
 
 I wanted to create a tool for managing expenses while introducing myself to Typescript</p>
-                            <a href="#https://gizemayegul.github.io/expensetrackertypescript/">Check it</a>
+                            <a href="https://gizemayegul.github.io/expensetrackertypescript/">Check it</a>
                         </div>
                     </div>
                 </div>
