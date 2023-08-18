@@ -18,7 +18,7 @@ const Projects = () => {
                             <h5 className="card-title">ExpenseTracker React with Typescript</h5>
                             <p className="card-text">I'm happy to share my new project – an Expense Tracker made using TypeScript and React. This project allowed me to learn TypeScript and improve my React skills.
 
-I wanted to create a tool for managing expenses while introducing myself to Typescript</p>
+                                I wanted to create a tool for managing expenses while introducing myself to Typescript</p>
                             <a href="https://gizemayegul.github.io/expensetrackertypescript/">Check it</a>
                         </div>
                     </div>
@@ -41,6 +41,9 @@ I wanted to create a tool for managing expenses while introducing myself to Type
                             <h5 className="card-title">Little Lemon Restaurant</h5>
                             <p className="card-text">Little Lemon Restaurant is a captivating webpage designed to provide users with an immersive and visually pleasing dining experience. Developed using HTML, CSS, React, and the Chakra library, this project showcases the seamless integration of front-end technologies to create a user-friendly and interactive reservation system. </p>
                             <a href="https://gizemayegul.github.io/LittleLemonRestaurant/">Check it</a>
+                            <p>I've  created a prototype for my Little Lemon Restaurant Project using Figma. This prototype brings my restaurant concept to life visually. If you're curious, I'd love to share it with you.This project really helped me learn how to use Figma and create user-friendly interface prototypes.</p>
+                            <a href="https://www.figma.com/file/pYeMWjcfSPbEfnPTsYh6ay/Capstone-prototype?type=design&mode=design&t=v920SM227ltoCv7E-1">Figma Prototype</a>
+
 
                         </div>
                     </div>
