@@ -1,23 +1,24 @@
 {
   "files": {
     "main.css": "/static/css/main.92e7844f.css",
-    "main.js": "/static/js/main.b8cc16a4.js",
+    "main.js": "/static/js/main.d1dd7760.js",
     "static/js/787.e41a5123.chunk.js": "/static/js/787.e41a5123.chunk.js",
     "static/media/myphoto-min.png": "/static/media/myphoto-min.5ef9250b1a1e2299307f.png",
     "static/media/Psm-min.png": "/static/media/Psm-min.dad4da39713a3a659430.png",
     "static/media/CorSera-min.png": "/static/media/CorSera-min.d7afa8d766b82e4c8948.png",
     "static/media/expensetracker.png": "/static/media/expensetracker.f97f801623ffd18897a9.png",
     "static/media/littlelemon.png": "/static/media/littlelemon.7d234c39ba960415a050.png",
+    "static/media/gizemayazyegul.pdf": "/static/media/gizemayazyegul.9c99d55577e599129d7b.pdf",
     "static/media/portfolio.png": "/static/media/portfolio.ec0b9a56b4981bc10cc1.png",
-    "static/media/gizemayazyegul_FE.pdf": "/static/media/gizemayazyegul_FE.2bd148f532fbfc031892.pdf",
+    "static/media/aagame.png": "/static/media/aagame.214e513d5836e7056266.png",
     "static/media/Data-min.png": "/static/media/Data-min.a9910d9da951876aaaf2.png",
     "index.html": "/index.html",
     "main.92e7844f.css.map": "/static/css/main.92e7844f.css.map",
-    "main.b8cc16a4.js.map": "/static/js/main.b8cc16a4.js.map",
+    "main.d1dd7760.js.map": "/static/js/main.d1dd7760.js.map",
     "787.e41a5123.chunk.js.map": "/static/js/787.e41a5123.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.92e7844f.css",
-    "static/js/main.b8cc16a4.js"
+    "static/js/main.d1dd7760.js"
   ]
 }
