@@ -5,12 +5,59 @@ import portfolio from "./assests/portfolio.png";
 import littlelemon from "./assests/littlelemon.png";
 import expensetracker from "./assests/expensetracker.png";
 import aagame from "./assests/aagame.png";
+import reframe from "./assests/reframe.png";
+import costars from "./assests/costars.jpeg";
 
 const Projects = () => {
   return (
     <section id="project">
       <h1>Projects</h1>
       <div id="wrapper" className="row row-cols-1 row-cols-md-3 g-4">
+        <div className="col">
+          <div className="card h-100">
+            <img
+              src={reframe}
+              style={{ maxHeight: "80%" }}
+              className="card-img-top"
+              size
+              alt="reframeproj"
+            />
+            <div className="card-body">
+              <h5 className="card-title">Reframe - Bootcamp project</h5>
+              <p className="card-text">
+                Reframe is a gratitude/diary app mainly focusing on mental help,
+                and having a stress-free application you can keep your memories.
+                We were honored with 1st place among the Web Development
+                Projects. worked within a team with design and data. We applied
+                the mobile-first methodology to our project and applied the
+                responsive design. While we were working on this project we
+                applied the agile methodologies and also used tools such as
+                Miro, Trello, and Figma to keep up teamwork. MERN
+                STACK/Bootstrap
+              </p>
+              <a href="https://reframe-4030c.web.app/">Check it </a>
+            </div>
+          </div>
+        </div>
+        <div className="col">
+          <div className="card h-100">
+            <img src={costars} className="card-img-top" alt="..." />
+            <div className="card-body">
+              <h5 className="card-title">Co - Stars ⭐️ - Track your coins</h5>
+              <p className="card-text">
+                This is a cointracker application where written with Express.js
+                and Handlebars, during the project I collaborated with one of my
+                colleagues from Ironhack. The development of the project helped
+                us to collaborate on GitHub and demonstrate teamwork. In this
+                application, the user is able to track their favorite coins and
+                can have a wallet to track their profit and loss. It was a great
+                exercise to learn Server Side Rendering, and understanding
+                MongoDB,and Express.JS
+              </p>
+              <a href="https://crypto.adaptable.app">Check it</a>
+            </div>
+          </div>
+        </div>
         <div className="col">
           <div className="card h-100">
             <img src={aagame} className="card-img-top" alt="..." />
