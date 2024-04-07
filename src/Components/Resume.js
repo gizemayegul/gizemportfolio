@@ -1,6 +1,6 @@
 import React from "react";
 import Slides from "./Slides";
-import resumePDF from "./assests/gizemayazyegul.pdf";
+import resumePDF from "./assests/gizemayazyegulresume.pdf";
 
 const Resume = () => {
   return (

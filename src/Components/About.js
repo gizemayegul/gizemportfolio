@@ -6,12 +6,14 @@ const About = () => {
     <section id="about">
       <div id="about-wrapper">
         <div className="row" style={{ justifyContent: "center" }}>
-          <img
-            src={myPhoto}
-            className="img-thumbnail"
-            alt="..."
-            style={{ borderRadius: "50%", maxWidth: "25%", height: "auto" }}
-          />
+          <div className="about-image-holder">
+            <img
+              src={myPhoto}
+              className="img-thumbnail"
+              alt="..."
+              style={{ borderRadius: "50%", width: "50%", height: "auto" }}
+            />
+          </div>
           <h2 className="text-center" style={{ margin: "1rem" }}>
             Hello Welcome to my Page!
           </h2>
@@ -24,6 +26,7 @@ const About = () => {
               style={{ textDecoration: "none" }}
               href="https://www.linkedin.com/posts/ironhack-germany_last-friday-we-hosted-the-final-hackshow-activity-7142911688139317249-F5cN?utm_source=share&utm_medium=member_desktop"
             >
+              <br />
               Check
             </a>{" "}
           </p>

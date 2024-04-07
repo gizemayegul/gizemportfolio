@@ -1,53 +1,46 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
-
-
-#resume-wrapper{
+#resume-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-
-#slides{
+#slides {
   max-width: 50%;
   padding: 1rem;
 }
 
-
-
-.App{
+.App {
   margin: 4rem;
 }
 
-@media (max-width: 768px){
-  #slides{
-    max-width: 100%
-  }
-
-  .App{
-    margin: 1rem;
-  }
-
-  img{
+@media (max-width: 768px) {
+  #slides {
     max-width: 100%;
   }
 
-}
+  .App {
+    margin: 1rem;
+  }
 
+  img {
+    max-width: 100%;
+  }
+}
 
 .alert-fixed {
   position: fixed;
@@ -61,28 +54,60 @@ code {
   transform: translateX(-50%);
 }
 
-
-.footer{
+.footer {
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: rgb(181, 186, 242);
-  margin-top:2rem;
-  flex-wrap:wrap ;
-
+  margin-top: 2rem;
+  flex-wrap: wrap;
 }
 
-.footer h3{
+.footer h3 {
   padding: 1rem;
   color: white;
 }
 
+.container-button {
+  display: flex;
+}
+
+#wrapper {
+  margin: 2rem;
+}
+
+#wrapper img {
+  padding: 1.5rem;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.about-image-holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: auto;
+}
 
 @media (max-width: 768px) {
-
-  .footer h3{
+  .footer h3 {
     padding: 0.2rem;
-    font-size:x-small
+    font-size: x-small;
   }
-  
+
+  .social-icons {
+    padding: 0.1rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Styles for tablets */
+  .col {
+    width: 49% !important;
+  }
+  .social-icons {
+    padding: 0.5rem;
+  }
 }
