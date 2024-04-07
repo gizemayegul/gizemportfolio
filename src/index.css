@@ -110,4 +110,7 @@ code {
   .social-icons {
     padding: 0.5rem;
   }
+  .about-image-holder {
+    width: 50%;
+  }
 }

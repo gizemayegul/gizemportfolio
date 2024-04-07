@@ -11,7 +11,7 @@ const About = () => {
               src={myPhoto}
               className="img-thumbnail"
               alt="..."
-              style={{ borderRadius: "50%", width: "50%", height: "auto" }}
+              style={{ borderRadius: "50%", width: "25%", height: "auto" }}
             />
           </div>
           <h2 className="text-center" style={{ margin: "1rem" }}>
