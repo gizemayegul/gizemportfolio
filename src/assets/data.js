@@ -1,10 +1,12 @@
-import portfolio from "./assests/portfolio.png";
-import littlelemon from "./assests/littlelemon.png";
-import expensetracker from "./assests/expensetracker.png";
-import aagame from "./assests/aagame.png";
-import reframe from "./assests/reframe.png";
-import costars from "./assests/costars.png";
-import myPhoto from "./assests/myphoto-min.png";
+import portfolio from "../assets/portfolio.png";
+import littlelemon from "../assets/littlelemon.jpg";
+import expensetracker from "../assets/expensetracker.png";
+import aagame from "../assets/aagame.jpg";
+import reframe from "../assets/reframe.png";
+import costars from "../assets/costars.jpg";
+import myPhoto from "../assets/myphoto-min.png";
+import news from "../assets/news.webp";
+import todo from "../assets/todo.avif";
 
 const projectsData = [
   {
@@ -14,25 +16,16 @@ const projectsData = [
     description: `Reframe is a gratitude/diary app mainly focusing on mental help,
                 and having a stress-free application you can keep your memories.
                 We were honored with 1st place among the Web Development
-                Projects. worked within a team with design and data. We applied
-                the mobile-first methodology to our project and applied the
-                responsive design. While we were working on this project we
-                applied the agile methodologies and also used tools such as
-                Miro, Trello, and Figma to keep up teamwork. MERN
-                STACK/Bootstrap`,
+                Projects. worked within a team with design and data.`,
   },
   {
     title: "Co - Stars ⭐️ - Track your coins",
     imgUrl: costars,
     url: "https://crypto.adaptable.app",
     description: `This is a cointracker application where written with Express.js
-                and Handlebars, during the project I collaborated with one of my
-                colleagues from Ironhack. The development of the project helped
-                us to collaborate on GitHub and demonstrate teamwork. In this
-                application, the user is able to track their favorite coins and
-                can have a wallet to track their profit and loss. It was a great
-                exercise to learn Server Side Rendering, and understanding
-                MongoDB,and Express.JS`,
+                and Handlebars,MongoDB during the project I collaborated with one of my
+                colleagues from Ironhack. In thisapplication, the user is able to track their favorite coins and
+                can have a wallet to track their profit and loss.`,
   },
   {
     title: "You spin me round - Aa game - Bootcamp project",
@@ -40,13 +33,7 @@ const projectsData = [
     url: "https://gizemayegul.github.io/youspinmeround/",
     description: `During my time at Ironhack boot camp, I led a game project that
                 showcased my proficiency in web development. Through the use of
-                DOM manipulation, HTML, CSS, and the versatile Canvas element, I
-                brought the project to life. The game not only demonstrated my
-                technical skills but also highlighted my ability to create
-                engaging and interactive experiences. This hands-on experience
-                at Ironhack further strengthened my skills in frontend
-                development, providing a dynamic platform to hone my creative
-                and technical abilities.`,
+                DOM manipulation, HTML, CSS, and the versatile Canvas element.`,
   },
   {
     title: "ExpenseTracker React with Typescript",
@@ -76,12 +63,11 @@ const projectsData = [
                 provide users with an immersive and visually pleasing dining
                 experience. Developed using HTML, CSS, React, and the Chakra
                 library, this project showcases the seamless integration of
-                front-end technologies to create a user-friendly and interactive
-                reservation system.`,
+                front-end technologies.`,
   },
   {
     title: "Tech News Page",
-    imgUrl: "https://images.mktw.net/im-808349/social",
+    imgUrl: news,
     url: "https://gizemayegul.github.io/technews/",
     description: `The News Aggregator is a web page designed to keep users
                 up-to-date with the latest news from various sources. Developed
@@ -99,8 +85,7 @@ const projectsData = [
   },
   {
     title: "Todo App",
-    imgUrl:
-      "https://www.asianefficiency.com/wp-content/uploads/2021/03/writing-lists-paper-scaled.jpg",
+    imgUrl: todo,
     url: "https://gizemayegul.github.io/todo_APP/",
     description: `The Todo Manager is a web page developed with the primary
                 objective of learning and managing state in React. This project

@@ -1,8 +1,10 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+
+  font-family: "Unbounded", sans-serif !important;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -58,14 +60,17 @@ code {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(181, 186, 242);
   margin-top: 2rem;
   flex-wrap: wrap;
+  background-color: #6c757d;
 }
 
 .footer h3 {
   padding: 1rem;
   color: white;
+}
+.col {
+  margin: 0 1.5rem 1rem 1rem;
 }
 
 .container-button {
@@ -73,23 +78,40 @@ code {
 }
 
 #wrapper {
-  margin: 2rem;
+  /* margin: 2rem; */
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
 }
 
 #wrapper img {
-  padding: 1.5rem;
+  padding: 1.4rem;
+  width: 100%;
 }
-
+.card-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 8;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-top: 1rem;
+}
 .card-body {
   display: flex;
   flex-direction: column-reverse;
+  margin-top: 0;
 }
+
 .about-image-holder {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 50%;
   height: auto;
+}
+.image-holder {
+  height: 50%;
 }
 
 @media (max-width: 768px) {
@@ -107,10 +129,154 @@ code {
   .col {
     width: 49% !important;
   }
+
   .social-icons {
     padding: 0.5rem;
   }
   .about-image-holder {
     width: 50%;
   }
+  .row-cols-1 > * {
+    width: 75%;
+  }
+}
+
+.col:hover {
+  transform: scale(1.1);
+}
+.card:hover {
+  border: 2px solid gray;
+}
+.alert-fixed {
+  margin-top: 1rem;
+}
+#resume {
+  margin-top: 2rem;
+}
+.nav-item:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px; /* Adjust this value to your liking */
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.nav-item > a:hover {
+  color: #007bff;
+}
+
+.form-btn {
+  margin-top: 1rem;
+}
+/* 
+.form-group {
+  margin-top: 1rem;
+} */
+.label {
+  margin-top: 0.5rem;
+}
+
+a {
+  color: #007bff;
+}
+
+.light {
+  background-color: #fff;
+  color: #333;
+  transition: background-color 1s ease, color 1s ease;
+}
+
+.dark {
+  background-color: #222529;
+  color: #edeef3;
+  transition: background-color 1s ease, color 1s ease;
+}
+
+.dark-asset {
+  background-color: #222529;
+  color: #edeef3 !important;
+  --bs-body-bg: #222529;
+  --bs-card-border-width: 0 !important;
+
+  transition: background-color 1s ease, color s ease; /* Add this line */
+}
+.dark-asset.card:hover {
+  border: 2px solid gray; /* Change this to the color you want in dark mode */
+}
+
+html body .card {
+  --bs-card-border-width: 0 !important;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #7263a1;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #7263a1;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.toogle-dark {
+  margin-left: 2rem;
+}
+
+.dark-toggle-button {
+  display: flex;
+  align-items: center;
+}
+
+.btn .btn-secondary {
+  background-color: #7263a1 !important;
 }

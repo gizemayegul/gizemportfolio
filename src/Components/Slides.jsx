@@ -1,10 +1,10 @@
 import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Carousel from "react-bootstrap/Carousel";
-import psmPNG from "./assests/Psm-min.png";
-import courseraPNG from "./assests/CorSera-min.png";
-import dataPNG from "./assests/Data-min.png";
-import ironhack from "./assests/Ironhack.png";
+import psmPNG from "../assets/Psm-min.png";
+import courseraPNG from "../assets/CorSera-min.png";
+import dataPNG from "../assets/Data-min.png";
+import ironhack from "../assets/Ironhack.png";
 
 function Slides() {
   const [index, setIndex] = useState(0);

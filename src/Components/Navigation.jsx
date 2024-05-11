@@ -1,14 +1,15 @@
+import React from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithub,
   faLinkedin,
-  faStackOverflow,
+  // faStackOverflow,
 } from "@fortawesome/free-brands-svg-icons";
+import DarkMode from "./DarkMode";
 
 function Navigation() {
   const socials = [
@@ -21,23 +22,19 @@ function Navigation() {
       url: "https://www.linkedin.com/in/gayazyegul/",
     },
   ];
-  const socialList = socials.map((item, index) => {
-    return (
-      <div key={index} size="2px" style={{ display: "flex" }}>
-        <ul style={{ listStyle: "none" }} className="social-icons">
-          <li>
-            <a href={item.url}>
-              <FontAwesomeIcon
-                icon={item.icon}
-                size="2x"
-                style={{ color: "#211E78" }}
-              />
-            </a>
-          </li>
-        </ul>
-      </div>
-    );
-  });
+  // const socialList = socials.map((item, index) => {
+  //   return (
+  //     <div key={index} size="2px" style={{ display: "flex" }}>
+  //       <ul style={{ listStyle: "none" }} className="social-icons">
+  //         <li>
+  //           <a href={item.url}>
+
+  //           </a>
+  //         </li>
+  //       </ul>
+  //     </div>
+  //   );
+  // });
   const handleNavClick = (e, targetId) => {
     e.preventDefault();
     const targetSection = document.querySelector(targetId);
@@ -45,7 +42,12 @@ function Navigation() {
   };
   return (
     <>
-      <Navbar expand="lg" bg="light" data-bs-theme="light">
+      <Navbar
+        expand="lg"
+        bg="light"
+        data-bs-theme="light"
+        className="justify-content-end"
+      >
         <Container>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
@@ -75,7 +77,22 @@ function Navigation() {
                 Contact
               </Nav.Link>
             </Nav>
-            <Nav>{socialList}</Nav>
+          </Navbar.Collapse>
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="justify-content-end flex-grow-1 pe-3  ">
+              {socials.map((e, i) => (
+                <Nav.Link className="align-center" key={i}>
+                  <FontAwesomeIcon
+                    icon={e.icon}
+                    size="2x"
+                    style={{ color: "#7263a1" }}
+                  />
+                </Nav.Link>
+              ))}
+              <div className="dark-toggle-button">
+                <DarkMode />
+              </div>
+            </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>

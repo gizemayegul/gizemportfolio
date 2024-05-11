@@ -1,6 +1,6 @@
 import React from "react";
 import Slides from "./Slides";
-import resumePDF from "./assests/gizemayazyegulresume.pdf";
+import resumePDF from "../assets/gizemayazyegulresume.pdf";
 
 const Resume = () => {
   return (
@@ -19,7 +19,7 @@ const Resume = () => {
             id="download"
             href={resumePDF}
             download
-            className="btn btn-primary"
+            className="btn btn-secondary"
           >
             Download PDF
           </a>
