@@ -33,14 +33,14 @@ function Navigation() {
     <>
       <Navbar
         expand="lg"
-        bg="dark"
-        data-bs-theme="dark"
+        bg="ligth"
+        data-bs-theme="ligth"
         className="justify-content-end"
       >
         <Container>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
-            <Navbar.Brand href="#home">
+            {/* <Navbar.Brand href="#home">
               <img
                 src={logo}
                 width="50"
@@ -48,7 +48,7 @@ function Navigation() {
                 className="d-inline-block align-top"
                 alt="React Bootstrap logo"
               />
-            </Navbar.Brand>
+            </Navbar.Brand> */}
             <Nav className="me-auto">
               <Nav.Link
                 href="#home"

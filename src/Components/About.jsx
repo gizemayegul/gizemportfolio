@@ -81,7 +81,7 @@ const About = () => {
                       {`Hi! I'm Gizem`}{" "}
                       <span
                         className="txt-rotate"
-                        dataPeriod="1000"
+                        data-period="1000"
                         data-rotate='[ "Web Developer", "Product Owner", "Scrum Master" ]'
                       >
                         <span className="wrap">{text}</span>
