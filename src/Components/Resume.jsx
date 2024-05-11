@@ -8,9 +8,9 @@ const Resume = () => {
       <h1>Resume</h1>
 
       <div id="resume-wrapper">
-        <div id="slides">
+        {/* <div id="slides">
           <Slides />
-        </div>
+        </div> */}
         <div>
           <h3>You can download my resume from here</h3>
         </div>

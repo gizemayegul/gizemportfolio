@@ -1,6 +1,6 @@
 body {
   margin: 0;
-
+  padding: 0;
   font-family: "Unbounded", sans-serif !important;
   font-optical-sizing: auto;
   font-weight: 100;
@@ -62,7 +62,7 @@ code {
   justify-content: center;
   margin-top: 2rem;
   flex-wrap: wrap;
-  background-color: #6c757d;
+  background-color: #7263a1;
 }
 
 .footer h3 {
@@ -112,33 +112,6 @@ code {
 }
 .image-holder {
   height: 50%;
-}
-
-@media (max-width: 768px) {
-  .footer h3 {
-    padding: 0.2rem;
-    font-size: x-small;
-  }
-
-  .social-icons {
-    padding: 0.1rem;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  /* Styles for tablets */
-  .col {
-    width: 49% !important;
-  }
-
-  .social-icons {
-    padding: 0.5rem;
-  }
-  .about-image-holder {
-    width: 50%;
-  }
-  .row-cols-1 > * {
-    width: 75%;
-  }
 }
 
 .col:hover {
@@ -247,11 +220,12 @@ html body .card {
 }
 
 input:checked + .slider {
-  background-color: #7263a1;
+  background-color: #7263d0;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #7263a1;
+  /* box-shadow: 0 0 1px #7263a1; */
+  box-shadow: 0 0 1px #7263d0;
 }
 
 input:checked + .slider:before {
@@ -279,4 +253,44 @@ input:checked + .slider:before {
 
 .btn .btn-secondary {
   background-color: #7263a1 !important;
+}
+
+#about {
+  margin-top: 15rem;
+}
+
+.btn {
+  background-color: #7263a1 !important;
+}
+@media (max-width: 768px) {
+  .footer h3 {
+    padding: 0.2rem;
+    font-size: x-small;
+  }
+
+  .social-icons {
+    padding: 0.1rem;
+  }
+  #about {
+    margin-top: 2rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Styles for tablets */
+  .col {
+    width: 49% !important;
+  }
+
+  .social-icons {
+    padding: 0.5rem;
+  }
+  .about-image-holder {
+    width: 50%;
+  }
+  #about {
+    margin-top: 0 2rem 0 3rem;
+  }
+  .row-cols-1 > * {
+    width: 75%;
+  }
 }

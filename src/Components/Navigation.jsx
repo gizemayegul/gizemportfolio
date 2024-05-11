@@ -3,6 +3,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import "bootstrap/dist/css/bootstrap.min.css";
+import logo from "../assets/planet.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithub,
@@ -22,19 +23,7 @@ function Navigation() {
       url: "https://www.linkedin.com/in/gayazyegul/",
     },
   ];
-  // const socialList = socials.map((item, index) => {
-  //   return (
-  //     <div key={index} size="2px" style={{ display: "flex" }}>
-  //       <ul style={{ listStyle: "none" }} className="social-icons">
-  //         <li>
-  //           <a href={item.url}>
 
-  //           </a>
-  //         </li>
-  //       </ul>
-  //     </div>
-  //   );
-  // });
   const handleNavClick = (e, targetId) => {
     e.preventDefault();
     const targetSection = document.querySelector(targetId);
@@ -44,13 +33,22 @@ function Navigation() {
     <>
       <Navbar
         expand="lg"
-        bg="light"
-        data-bs-theme="light"
+        bg="dark"
+        data-bs-theme="dark"
         className="justify-content-end"
       >
         <Container>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
+            <Navbar.Brand href="#home">
+              <img
+                src={logo}
+                width="50"
+                height="40"
+                className="d-inline-block align-top"
+                alt="React Bootstrap logo"
+              />
+            </Navbar.Brand>
             <Nav className="me-auto">
               <Nav.Link
                 href="#home"
@@ -64,12 +62,12 @@ function Navigation() {
               >
                 Projects
               </Nav.Link>
-              <Nav.Link
+              {/* <Nav.Link
                 href="#resume"
                 onClick={(e) => handleNavClick(e, "#resume")}
               >
                 Resume
-              </Nav.Link>
+              </Nav.Link> */}
               <Nav.Link
                 href="#contact"
                 onClick={(e) => handleNavClick(e, "#contact")}
@@ -85,7 +83,7 @@ function Navigation() {
                   <FontAwesomeIcon
                     icon={e.icon}
                     size="2x"
-                    style={{ color: "#7263a1" }}
+                    style={{ color: "#7263D0" }}
                   />
                 </Nav.Link>
               ))}

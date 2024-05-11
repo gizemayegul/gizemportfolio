@@ -1,62 +1,129 @@
 import React from "react";
 import myPhoto from "../assets/myphoto-min.png";
+import { useState, useEffect } from "react";
+import { Container, Row, Col } from "react-bootstrap";
+import headerImg from "../assets/header-img.svg";
+import { ArrowRightCircle } from "react-bootstrap-icons";
+import "animate.css";
+import TrackVisibility from "react-on-screen";
 
 const About = () => {
+  const [loopNum, setLoopNum] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [text, setText] = useState("");
+  const [delta, setDelta] = useState(300 - Math.random() * 100);
+  const [index, setIndex] = useState(1);
+  const toRotate = ["Web Developer", "Product Owner", "Scrum Master"];
+  const period = 2000;
+
+  useEffect(() => {
+    let ticker = setInterval(() => {
+      tick();
+    }, delta);
+
+    return () => {
+      clearInterval(ticker);
+    };
+  }, [text]);
+
+  const tick = () => {
+    let i = loopNum % toRotate.length;
+    let fullText = toRotate[i];
+    let updatedText = isDeleting
+      ? fullText.substring(0, text.length - 1)
+      : fullText.substring(0, text.length + 1);
+
+    setText(updatedText);
+
+    if (isDeleting) {
+      setDelta((prevDelta) => prevDelta / 2);
+    }
+
+    if (!isDeleting && updatedText === fullText) {
+      setIsDeleting(true);
+      setIndex((prevIndex) => prevIndex - 1);
+      setDelta(period);
+    } else if (isDeleting && updatedText === "") {
+      setIsDeleting(false);
+      setLoopNum(loopNum + 1);
+      setIndex(1);
+      setDelta(500);
+    } else {
+      setIndex((prevIndex) => prevIndex + 1);
+    }
+  };
+
+  const handleNavClick = (e, targetId) => {
+    e.preventDefault();
+    const targetSection = document.querySelector(targetId);
+    targetSection.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <section id="about">
       <div id="about-wrapper">
-        <div className="row" style={{ justifyContent: "center" }}>
-          <div className="about-image-holder">
-            <img
-              src={myPhoto}
-              className="img-thumbnail"
-              alt="..."
-              style={{ borderRadius: "50%", width: "25%", height: "auto" }}
-            />
-          </div>
-          <h2 className="text-center" style={{ margin: "1rem" }}>
-            Hello Welcome to my Page!
-          </h2>
-          <p className="text-center">
-            {" "}
-            🎯 Just Finished Web Development Bootcamp at Ironhack! 👀 Learning
-            <br />
-            🏆 And our project selected 1st among the other web projects 🏆 🥂
-            <a
-              style={{ textDecoration: "none" }}
-              href="https://www.linkedin.com/posts/ironhack-germany_last-friday-we-hosted-the-final-hackshow-activity-7142911688139317249-F5cN?utm_source=share&utm_medium=member_desktop"
-            >
-              <br />
-              Check
-            </a>{" "}
-          </p>
-        </div>
-
-        <div className="row" style={{ padding: "3rem" }}>
-          <p>
-            {" "}
-            I come from a background in Product and Agile, where I've developed
-            solid communication skills, effective prioritization abilities, and
-            a sharp understanding of user experience. Understanding and pointing
-            out the needs of stakeholders helps me grasp the requirements very
-            easily. Even though I don’t have direct experience as a web
-            developer, my early curiosity in the field has been present since
-            childhood, leading me to always maintain interest and slowly develop
-            some skills even before I decided to change my career to web
-            development. Through personal projects and collaborative efforts
-            during boot camp, I've delved into the world of web development and
-            realized that the joy of working with software and overcoming
-            challenges is addictive. Being an experienced product owner has
-            allowed me to seamlessly work with developers, and quickly grasp
-            technical aspects, and also my scrum master experiences enabling me
-            to navigate and overcome obstacles with ease. What I bring to the
-            table is not just a set of skills, but also my endless curiosity and
-            a commitment to continuous learning. I am confident in my ability to
-            be a significant asset to any team, offering not only my existing
-            knowledge but also a dedication to staying current with the latest
-            technologies and approaches.
-          </p>
-        </div>
+        <Container>
+          <h3 className="tagline">Welcome to my Portfolio</h3>
+          <Row className="aligh-items-center">
+            <Col xs={12} md={6} xl={7}>
+              <TrackVisibility>
+                {({ isVisible }) => (
+                  <div
+                    className={
+                      isVisible ? "animate__animated animate__fadeIn" : ""
+                    }
+                  >
+                    <h1
+                      style={{
+                        backgroundColor:
+                          "linear-gradient(to right, #800080, #FFC0CB)",
+                      }}
+                    >
+                      {`Hi! I'm Gizem`}{" "}
+                      <span
+                        className="txt-rotate"
+                        dataPeriod="1000"
+                        data-rotate='[ "Web Developer", "Product Owner", "Scrum Master" ]'
+                      >
+                        <span className="wrap">{text}</span>
+                      </span>
+                    </h1>
+                    <p>
+                      I come from a background in Product and Agile, where I've
+                      honed solid communication skills, effective prioritization
+                      abilities, and a sharp understanding of user experience. I
+                      am confident in my ability to be a significant asset to
+                      any team, offering not only my existing knowledge but also
+                      a dedication to staying current with the latest
+                      technologies and approaches. Additionally, I have a
+                      passion for creating interactive websites, combining my
+                      skills in product development with my love for engaging
+                      user experiences."
+                    </p>
+                    <button
+                      className="btn btn-secondary"
+                      onClick={(e) => handleNavClick(e, "#contact")}
+                    >
+                      Let’s Connect <ArrowRightCircle size={40} />
+                    </button>
+                  </div>
+                )}
+              </TrackVisibility>
+            </Col>
+            <Col xs={12} md={6} xl={5}>
+              <TrackVisibility>
+                {({ isVisible }) => (
+                  <div
+                    className={
+                      isVisible ? "animate__animated animate__zoomIn" : ""
+                    }
+                  >
+                    <img src={headerImg} alt="Header Img" />
+                  </div>
+                )}
+              </TrackVisibility>
+            </Col>
+          </Row>
+        </Container>
       </div>
     </section>
   );
