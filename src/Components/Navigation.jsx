@@ -79,7 +79,12 @@ function Navigation() {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="justify-content-end flex-grow-1 pe-3  ">
               {socials.map((e, i) => (
-                <Nav.Link className="align-center" key={i}>
+                <Nav.Link
+                  className="align-center"
+                  key={i}
+                  href={e.url}
+                  target="_blank"
+                >
                   <FontAwesomeIcon
                     icon={e.icon}
                     size="2x"

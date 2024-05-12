@@ -48,6 +48,7 @@ const ContactMe = () => {
   return (
     <>
       <form id="contact" ref={form} onSubmit={sendEmail}>
+        <h1>Contact Me</h1>
         <div className="form-group">
           <label htmlFor="name" className="label">
             {" "}
