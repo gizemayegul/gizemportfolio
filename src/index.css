@@ -292,6 +292,9 @@ input:checked + .slider:before {
 /*? SMALL SCREEN */
 
 @media (max-width: 768px) {
+  .dark::before {
+    height: 140vh;
+  }
 }
 /*? SCREEN */
 
