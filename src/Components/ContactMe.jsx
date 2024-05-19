@@ -31,7 +31,7 @@ const ContactMe = () => {
         setShowAlert(true);
         setTimeout(() => {
           setShowAlert(false);
-        }, 3000);
+        }, 4000);
       },
       (error) => {
         setShowError(true);
@@ -59,6 +59,7 @@ const ContactMe = () => {
 
             <input
               className="form-control mb-3"
+              required
               type="text"
               placeholder="Name"
               name="Name"
@@ -74,6 +75,7 @@ const ContactMe = () => {
             <input
               name="Email"
               type="email"
+              required
               className="form-control"
               placeholder="name@example.com"
               autoComplete="on"
@@ -86,6 +88,7 @@ const ContactMe = () => {
               Text me
             </label>
             <textarea
+              required
               className="form-control"
               name="Textarea"
               rows={3}
