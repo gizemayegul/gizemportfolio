@@ -13,7 +13,7 @@ const About = () => {
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = ["Web Developer", "Product Owner", "Scrum Master"];
+  const toRotate = ["Web Developer", "Scrum Master"];
   const period = 2000;
 
   useEffect(() => {
@@ -62,7 +62,7 @@ const About = () => {
     <section id="about">
       <div id="about-wrapper">
         <Container>
-          <h3 className="tagline">Welcome to my Portfolio</h3>
+          <h1 className="tagline">Welcome to my Portfolio</h1>
           <Row className="aligh-items-center">
             <Col xs={12} md={6} xl={7}>
               <TrackVisibility>
@@ -82,7 +82,7 @@ const About = () => {
                       <span
                         className="txt-rotate"
                         data-period="1000"
-                        data-rotate='[ "Web Developer", "Product Owner", "Scrum Master" ]'
+                        data-rotate='[ "Web Developer", "Scrum Master" ]'
                       >
                         <span className="wrap">{text}</span>
                       </span>
@@ -117,7 +117,7 @@ const About = () => {
                       isVisible ? "animate__animated animate__zoomIn" : ""
                     }
                   >
-                    <img src={headerImg} alt="Header Img" />
+                    <img className="astro" src={headerImg} alt="Header Img" />
                   </div>
                 )}
               </TrackVisibility>

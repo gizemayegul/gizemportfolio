@@ -3,96 +3,37 @@ body {
   padding: 0;
   font-family: "Unbounded", sans-serif !important;
   font-optical-sizing: auto;
-  font-weight: 100;
+  font-weight: 500;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+html,
+body,
+#root,
+.App {
+  background-color: #222529;
 }
 
-#resume-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-#slides {
-  max-width: 50%;
-  padding: 1rem;
+html {
+  overscroll-behavior: none;
 }
 
 .App {
-  margin: 4rem;
+  margin: 0;
+  padding: 0;
 }
-
-@media (max-width: 768px) {
-  #slides {
-    max-width: 100%;
-  }
-
-  .App {
-    margin: 1rem;
-  }
-
-  img {
-    max-width: 100%;
-  }
-}
-
-.alert-fixed {
-  position: fixed;
-  z-index: 9999;
-}
-
-/* Style for the top alert */
-.alert-top {
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 2rem;
-  flex-wrap: wrap;
-  background-color: #7263a1;
-}
-
-.footer h3 {
-  padding: 1rem;
-  color: white;
-}
-.col {
-  margin: 0 1.5rem 1rem 1rem;
-}
-
 .container-button {
   display: flex;
 }
 
-#wrapper {
-  /* margin: 2rem; */
-  display: flex;
-  /* align-items: center; */
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 2rem;
-}
-
-#wrapper img {
-  padding: 1.4rem;
-  width: 100%;
+.project-title,
+.contact-title {
+  margin-bottom: 2rem;
 }
 .card-text {
   display: -webkit-box;
-  -webkit-line-clamp: 8;
+  -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
   overflow: hidden;
   margin-top: 1rem;
@@ -103,82 +44,82 @@ code {
   margin-top: 0;
 }
 
-.about-image-holder {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 50%;
-  height: auto;
-}
-.image-holder {
-  height: 50%;
-}
-
-.col:hover {
-  transform: scale(1.1);
-}
 .card:hover {
   border: 2px solid gray;
-}
-.alert-fixed {
-  margin-top: 1rem;
-}
-#resume {
-  margin-top: 2rem;
-}
-.nav-item:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 10px; /* Adjust this value to your liking */
-  cursor: pointer;
-  transform: scale(1.1);
-}
-
-.nav-item > a:hover {
-  color: #007bff;
 }
 
 .form-btn {
   margin-top: 1rem;
 }
-/* 
-.form-group {
-  margin-top: 1rem;
-} */
+
 .label {
-  margin-top: 0.5rem;
+  margin: 0.5rem;
+}
+.nav-link:hover {
+  transform: scale(1.1);
 }
 
-a {
-  color: #007bff;
+#about {
+  background-size: cover;
 }
 
-.light {
-  background-color: #fff;
-  color: #333;
-  transition: background-color 1s ease, color 1s ease;
+/* FLIP */
+.flip-card {
+  background-color: transparent;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 
-.dark {
-  background-color: #222529;
-  color: #edeef3;
-  transition: background-color 1s ease, color 1s ease;
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
 }
 
-.dark-asset {
-  background-color: #222529;
-  color: #edeef3 !important;
-  --bs-body-bg: #222529;
-  --bs-card-border-width: 0 !important;
-
-  transition: background-color 1s ease, color s ease; /* Add this line */
-}
-.dark-asset.card:hover {
-  border: 2px solid gray; /* Change this to the color you want in dark mode */
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
 }
 
-html body .card {
-  --bs-card-border-width: 0 !important;
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
 }
+
+.flip-card-back {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url("./assets/astro.jpg");
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  color: white;
+  transform: rotateY(180deg);
+}
+
+/* 
+  TOOGLE
+} */
 
 .switch {
   position: relative;
@@ -195,6 +136,14 @@ html body .card {
 }
 
 /* The slider */
+@keyframes slide {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
 .slider {
   position: absolute;
   cursor: pointer;
@@ -202,7 +151,10 @@ html body .card {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: #fe9a35;
+
+  background-size: cover;
+
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -210,28 +162,30 @@ html body .card {
 .slider:before {
   position: absolute;
   content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
+  height: 32px;
+  width: 32px;
+  background-image: url("./assets/sun.png");
+  background-size: cover;
+
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
 input:checked + .slider {
-  background-color: #7263d0;
+  background-color: black;
 }
 
 input:focus + .slider {
   /* box-shadow: 0 0 1px #7263a1; */
-  box-shadow: 0 0 1px #7263d0;
+  box-shadow: 0 0 1px #fea73e;
 }
 
 input:checked + .slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
+  background-image: url("./assets/moon.png");
+  background-size: cover;
 }
 
 /* Rounded sliders */
@@ -243,7 +197,7 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 .toogle-dark {
-  margin-left: 2rem;
+  /* margin-left: 2rem; */
 }
 
 .dark-toggle-button {
@@ -251,46 +205,94 @@ input:checked + .slider:before {
   align-items: center;
 }
 
+/*?
+  TOOGLE
+} */
+
 .btn .btn-secondary {
-  background-color: #7263a1 !important;
+  background-color: #4e3596 !important;
 }
 
 #about {
-  margin-top: 15rem;
+  margin-top: 6rem;
 }
 
 .btn {
-  background-color: #7263a1 !important;
+  background-color: #4e3596 !important;
 }
+
+.light {
+  background-color: #fff;
+  color: #333;
+  transition: background-color 1s ease, color 1s ease;
+}
+
+.dark {
+  background-color: #222529;
+  position: relative;
+
+  color: #edeef3 !important;
+  transition: background-color 1s ease, coloar 1s ease;
+  --bs-body-bg: #222529;
+  --bs-card-border-width: 0 !important;
+  --bs-body-color: #edeef3;
+}
+
+.dark::before {
+  content: "";
+  background-image: url("./assets/astro.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: inherit;
+
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.astro {
+  width: 100%;
+}
+.nav-link {
+  font-size: large !important;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  background-color: #4e3596;
+}
+
+.footer h3 {
+  padding: 1rem;
+  color: white;
+}
+
+#project,
+.contact {
+  margin-top: 2rem;
+}
+
+/* MEDIAAAA */
+/*? SMALL SCREEN */
+
 @media (max-width: 768px) {
-  .footer h3 {
-    padding: 0.2rem;
-    font-size: x-small;
-  }
+}
+/*? SCREEN */
 
-  .social-icons {
-    padding: 0.1rem;
-  }
-  #about {
-    margin-top: 2rem;
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .row-cols-md-4 > * {
+    width: 50% !important;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  /* Styles for tablets */
-  .col {
-    width: 49% !important;
-  }
 
-  .social-icons {
-    padding: 0.5rem;
-  }
-  .about-image-holder {
-    width: 50%;
-  }
-  #about {
-    margin-top: 0 2rem 0 3rem;
-  }
-  .row-cols-1 > * {
-    width: 75%;
-  }
+/*? BIG SCREEN */
+@media only screen and (min-width: 1025px) {
 }

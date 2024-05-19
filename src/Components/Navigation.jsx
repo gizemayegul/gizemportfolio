@@ -5,21 +5,26 @@ import Navbar from "react-bootstrap/Navbar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import logo from "../assets/planet.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import github from "../assets/icons8-github-48.png";
+import linkedin from "../assets/icons8-linkedin-48.png";
 import {
   faGithub,
   faLinkedin,
   // faStackOverflow,
 } from "@fortawesome/free-brands-svg-icons";
 import DarkMode from "./DarkMode";
+import { useContext } from "react";
+import { ThemeContext } from "../Context/ThemeContext";
 
 function Navigation() {
+  const { theme } = useContext(ThemeContext);
   const socials = [
     {
-      icon: faGithub,
+      icon: github,
       url: "https://github.com/gizemayegul",
     },
     {
-      icon: faLinkedin,
+      icon: linkedin,
       url: "https://www.linkedin.com/in/gayazyegul/",
     },
   ];
@@ -34,8 +39,7 @@ function Navigation() {
       <Navbar
         expand="lg"
         bg="ligth"
-        data-bs-theme="ligth"
-        className="justify-content-end"
+        data-bs-theme={`${theme ? "ligth" : "dark"}`}
       >
         <Container>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -85,11 +89,7 @@ function Navigation() {
                   href={e.url}
                   target="_blank"
                 >
-                  <FontAwesomeIcon
-                    icon={e.icon}
-                    size="2x"
-                    style={{ color: "#7263D0" }}
-                  />
+                  <img className="icons" src={e.icon} alt={e.icon + "Svg"} />
                 </Nav.Link>
               ))}
               <div className="dark-toggle-button">
