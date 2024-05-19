@@ -26,6 +26,8 @@ function App() {
     document.querySelector("#root").style.transition =
       "background-color 1s ease, color 1s ease";
   }
+
+  // repeat every 10s
   return (
     //TODO add and remove classname is it better
     <div className={`App ${theme ? "light" : "dark"}`}>

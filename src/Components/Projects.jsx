@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import projectsData from "../assets/data";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
+import hover from "../assets/hover.png";
 
 const Projects = () => {
   return (
@@ -22,6 +23,9 @@ const Projects = () => {
                     />
                   </div>
                   <div className="card-body">
+                    <div className="hover-icon">
+                      <img src={hover} alt={hover + "svg"} />
+                    </div>
                     <p className="card-text">{project.description}</p>
                     <h5 className="card-title">{project.title}</h5>
                   </div>

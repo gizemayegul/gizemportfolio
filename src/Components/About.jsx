@@ -88,22 +88,23 @@ const About = () => {
                       </span>
                     </h1>
                     <p>
-                      I come from a background in Product and Agile, where I've
-                      honed solid communication skills, effective prioritization
-                      abilities, and a sharp understanding of user experience. I
-                      am confident in my ability to be a significant asset to
-                      any team, offering not only my existing knowledge but also
-                      a dedication to staying current with the latest
-                      technologies and approaches. Additionally, I have a
-                      passion for creating interactive websites, combining my
-                      skills in product development with my love for engaging
-                      user experiences."
+                      With a background in Product Management and Agile
+                      methodologies, I've honed strong communication skills and
+                      a deep understanding of user experience. I am passionate
+                      about creating interactive websites, seamlessly blending
+                      my skills in product development with my love for crafting
+                      engaging user experiences. I am always eager to learn and
+                      grow, committed to staying current with the latest
+                      technologies and approaches to continuously improve and
+                      contribute effectively to any team. If you want to
+                      collaborate, feel free to send me an email!
                     </p>
                     <button
                       className="btn btn-secondary"
+                      style={{ paddingLeft: "1rem", paddingRight: "1rem" }}
                       onClick={(e) => handleNavClick(e, "#contact")}
                     >
-                      Let’s Connect <ArrowRightCircle size={40} />
+                      Let’s Connect 🚀 <ArrowRightCircle size={40} />
                     </button>
                   </div>
                 )}
