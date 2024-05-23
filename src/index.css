@@ -74,7 +74,7 @@ html {
   position: relative;
   width: 100%;
   height: 100%;
-  text-align: center;
+  /* text-align: center; */
   transition: transform 0.8s;
   transform-style: preserve-3d;
 }
@@ -98,7 +98,7 @@ html {
 
 .flip-card-back {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: column;
   background-image: url("./assets/astro.jpg");
   padding: 1rem;
@@ -250,15 +250,15 @@ input:checked + .slider:before {
   content: "";
   background-image: url("./assets/astro.jpg");
   background-size: cover;
-  height: 100vh;
+  transition: opacity 0.5s ease-in-out;
+  max-height: 20%;
   width: inherit;
-
-  top: 0;
+  top: 10vh;
   right: 0;
   bottom: 0;
   left: 0;
   position: absolute;
-  opacity: 0.5;
+  opacity: 0.3;
   pointer-events: none;
 }
 
@@ -293,7 +293,7 @@ input:checked + .slider:before {
 
 @media (max-width: 768px) {
   .dark::before {
-    height: 140vh;
+    max-height: 11%;
   }
 }
 /*? SCREEN */
@@ -301,6 +301,9 @@ input:checked + .slider:before {
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .row-cols-md-4 > * {
     width: 50% !important;
+  }
+  .dark::before {
+    max-height: 13%;
   }
 }
 
