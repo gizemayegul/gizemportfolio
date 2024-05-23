@@ -100,7 +100,9 @@ html {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  background-image: url("./assets/astro.jpg");
+  background-image: url("./assets/image.png");
+  background-size: cover;
+
   padding: 1rem;
   border-radius: 0.5rem;
 }
