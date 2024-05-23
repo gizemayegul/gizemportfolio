@@ -234,7 +234,7 @@ input:checked + .slider:before {
 .light {
   background-color: #fff;
   color: #333;
-  transition: background-color 1s ease, color 1s ease;
+  /* transition: background-color 1s ease, color 1s ease; */
 }
 
 .dark {
@@ -242,7 +242,7 @@ input:checked + .slider:before {
   position: relative;
 
   color: #edeef3 !important;
-  transition: background-color 1s ease, coloar 1s ease;
+  /* transition: background-color 1s ease, coloar 1s ease; */
   --bs-body-bg: #222529;
   --bs-card-border-width: 0 !important;
   --bs-body-color: #edeef3;
