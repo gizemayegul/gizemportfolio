@@ -16,16 +16,25 @@ const projectsData = [
     description: `Reframe is a gratitude/diary app mainly focusing on mental help,
                 and having a stress-free application you can keep your memories.
                 We were honored with 1st place among the Web Development
-                Projects. worked within a team with design and data.`,
+                Projects. worked within a team with design and data. We applied
+                the mobile-first methodology to our project and applied the
+                responsive design. While we were working on this project we
+                applied the agile methodologies and also used tools such as
+                Miro, Trello, and Figma to keep up teamwork. MERN
+                STACK/Bootstrap`,
   },
   {
     title: "Co - Stars ⭐️ - Track your coins",
     imgUrl: costars,
     url: "https://crypto.adaptable.app",
     description: `This is a cointracker application where written with Express.js
-                and Handlebars,MongoDB during the project I collaborated with one of my
-                colleagues from Ironhack. In thisapplication, the user is able to track their favorite coins and
-                can have a wallet to track their profit and loss.`,
+                and Handlebars, during the project I collaborated with one of my
+                colleagues from Ironhack. The development of the project helped
+                us to collaborate on GitHub and demonstrate teamwork. In this
+                application, the user is able to track their favorite coins and
+                can have a wallet to track their profit and loss. It was a great
+                exercise to learn Server Side Rendering, and understanding
+                MongoDB,and Express.JS`,
   },
   {
     title: "You spin me round - Aa game - Bootcamp project",
@@ -33,7 +42,13 @@ const projectsData = [
     url: "https://gizemayegul.github.io/youspinmeround/",
     description: `During my time at Ironhack boot camp, I led a game project that
                 showcased my proficiency in web development. Through the use of
-                DOM manipulation, HTML, CSS, and the versatile Canvas element.`,
+                DOM manipulation, HTML, CSS, and the versatile Canvas element, I
+                brought the project to life. The game not only demonstrated my
+                technical skills but also highlighted my ability to create
+                engaging and interactive experiences. This hands-on experience
+                at Ironhack further strengthened my skills in frontend
+                development, providing a dynamic platform to hone my creative
+                and technical abilities.`,
   },
   {
     title: "ExpenseTracker React with Typescript",
@@ -63,7 +78,8 @@ const projectsData = [
                 provide users with an immersive and visually pleasing dining
                 experience. Developed using HTML, CSS, React, and the Chakra
                 library, this project showcases the seamless integration of
-                front-end technologies.`,
+                front-end technologies to create a user-friendly and interactive
+                reservation system.`,
   },
   {
     title: "Tech News Page",
