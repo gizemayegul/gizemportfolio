@@ -43,6 +43,9 @@ html {
   flex-direction: column-reverse;
   margin-top: 0;
 }
+.image-holder img {
+  max-height: 260px;
+}
 
 .card:hover {
   border: 2px solid gray;
@@ -100,8 +103,8 @@ html {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  background-image: url("./assets/image.png");
-  background-size: cover;
+  background-image: url("./assets/astro.jpg");
+  /* background-size: cover; */
 
   padding: 1rem;
   border-radius: 0.5rem;
@@ -206,9 +209,6 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
-.toogle-dark {
-  /* margin-left: 2rem; */
-}
 
 .dark-toggle-button {
   display: flex;
@@ -289,6 +289,11 @@ input:checked + .slider:before {
 .contact {
   margin-top: 2rem;
 }
+
+/* .g-4,
+.gy-4 {
+  --bs-gutter-y: 10.5rem;
+} */
 
 /* MEDIAAAA */
 /*? SMALL SCREEN */

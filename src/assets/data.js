@@ -7,14 +7,25 @@ import costars from "../assets/costars.jpg";
 import myPhoto from "../assets/myphoto-min.png";
 import news from "../assets/news.webp";
 import todo from "../assets/todo.avif";
+import pmttool from "../assets/pmttool.png";
 
 const projectsData = [
+  {
+    title: "TaskFlow - TypeScript/MERN/Tailwind/React DnD Kit/Daisy UI",
+    imgUrl: pmttool,
+    url: "https://pmt-tool.netlify.app/",
+    description: `TaskFlow is an intuitive project management tool designed to task management.
+     Built from the ground up using the MERN stack.
+     Creating TaskFlow was an exciting challenge that deepened my understanding of TypeScript and React’s ecosystem.
+     The integration of React DnD Kit was a standout experience, allowing me to enhance user interactivity in a way that feels natural and engaging.
+    TaskFlow is in its MVP stage.
+`,
+  },
   {
     title: "Reframe - Bootcamp project ",
     imgUrl: reframe,
     url: "https://reframe-4030c.web.app/",
     description: `Reframe is a gratitude/diary app mainly focusing on mental help,
-                and having a stress-free application you can keep your memories.
                 We were honored with 1st place among the Web Development
                 Projects. worked within a team with design and data. We applied
                 the mobile-first methodology to our project and applied the
