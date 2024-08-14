@@ -27,11 +27,9 @@ const projectsData = [
     url: "https://reframe-4030c.web.app/",
     description: `Reframe is a gratitude/diary app mainly focusing on mental help,
                 We were honored with 1st place among the Web Development
-                Projects. worked within a team with design and data. We applied
+                Projects. worked with a designer and data analyst. We applied
                 the mobile-first methodology to our project and applied the
-                responsive design. While we were working on this project we
-                applied the agile methodologies and also used tools such as
-                Miro, Trello, and Figma to keep up teamwork. MERN
+                responsive design. MERN
                 STACK/Bootstrap`,
   },
   {

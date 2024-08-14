@@ -43,9 +43,7 @@ html {
   flex-direction: column-reverse;
   margin-top: 0;
 }
-.image-holder img {
-  max-height: 260px;
-}
+
 
 .card:hover {
   border: 2px solid gray;
@@ -312,8 +310,10 @@ input:checked + .slider:before {
   .dark::before {
     max-height: 13%;
   }
+ 
 }
 
 /*? BIG SCREEN */
 @media only screen and (min-width: 1025px) {
+ 
 }
