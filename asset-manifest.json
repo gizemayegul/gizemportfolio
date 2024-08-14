@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.e2597532.css",
-    "main.js": "/static/js/main.1d8bf11f.js",
+    "main.css": "/static/css/main.8bb42ea5.css",
+    "main.js": "/static/js/main.99b03de3.js",
     "static/js/787.8c0bb1be.chunk.js": "/static/js/787.8c0bb1be.chunk.js",
     "static/media/planet.png": "/static/media/planet.2efc8a1a464e3bafd4c0.png",
     "static/media/astro.jpg": "/static/media/astro.b24efd998a8275fd38d7.jpg",
@@ -11,7 +11,6 @@
     "static/media/reframe.png": "/static/media/reframe.28004ff44243d6cbea69.png",
     "static/media/expensetracker.png": "/static/media/expensetracker.f97f801623ffd18897a9.png",
     "static/media/portfolio.png": "/static/media/portfolio.ec0b9a56b4981bc10cc1.png",
-    "static/media/pmttool.png": "/static/media/pmttool.63fcd692a3a8b19ff49a.png",
     "static/media/header-img.svg": "/static/media/header-img.462ead52a941701546a47c16a2b251ad.svg",
     "static/media/costars.jpg": "/static/media/costars.0f0c5caf321ef4a82584.jpg",
     "static/media/littlelemon.jpg": "/static/media/littlelemon.d9cc5452b2e9c45b6992.jpg",
@@ -19,12 +18,12 @@
     "static/media/news.webp": "/static/media/news.3c1e4daae32e4c2e7ba2.webp",
     "static/media/todo.avif": "/static/media/todo.2e2b3fba20d6ce8756bb.avif",
     "index.html": "/index.html",
-    "main.e2597532.css.map": "/static/css/main.e2597532.css.map",
-    "main.1d8bf11f.js.map": "/static/js/main.1d8bf11f.js.map",
+    "main.8bb42ea5.css.map": "/static/css/main.8bb42ea5.css.map",
+    "main.99b03de3.js.map": "/static/js/main.99b03de3.js.map",
     "787.8c0bb1be.chunk.js.map": "/static/js/787.8c0bb1be.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e2597532.css",
-    "static/js/main.1d8bf11f.js"
+    "static/css/main.8bb42ea5.css",
+    "static/js/main.99b03de3.js"
   ]
 }
